@@ -1,9 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-.smaller-img {
-	width: 200px;
+.profile-pic {
+	position: relative;
+  	width: 190px;
+  	height: auto;
+  	overflow: hidden;
 }
 
 .roboto-font {
 	font-family: Roboto, Helvetica;
 	font-size: 16px;
+}
+
+/* fontawesome colors */
+.fa-github {
+	color: #000;
+}
+
+.fa-linkedin {
+    color: #007bb6
+}
+
+.fa-twitter {
+	color: #00aced;
+}
+
+.fa-instagram {
+	color: #3f729b;
 }
