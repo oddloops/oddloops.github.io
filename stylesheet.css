@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.smaller-img {
+	width: 200px;
+}
+
+.roboto-font {
+	font-family: Roboto, Helvetica;
+	font-size: 16px;
+}
