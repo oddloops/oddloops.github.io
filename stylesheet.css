@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+div {
+	font-family: Roboto, Helvetica;
+	font-size: 16px;
+}
+
+p {
+	width: 500px;
+	margin: auto;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+}
+
 .profile-pic {
 	display: inline;
 	margin-top: -100px;
@@ -13,11 +28,6 @@
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-}
-
-.roboto-font {
-	font-family: Roboto, Helvetica;
-	font-size: 16px;
 }
 
 .center {
@@ -49,8 +59,4 @@
 
 .fa-twitter {
 	color: #00aced;
-}
-
-.fa-instagram {
-	color: #3f729b;
 }
