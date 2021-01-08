@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-div {
-	font-family: Roboto, Helvetica;
-	font-size: 16px;
-}
-
-p {
+/* Create text box */
+p { 
 	width: 500px;
 	margin: auto;
 }
 
-h2 {
-	display: flex;
-	justify-content: center;
+/* fonts */
+.roboto-font {
+	font-family: Roboto, Helvetica;
+	font-size: 16px;
+	text-align: left;
 }
 
+/* Circular images */
 .profile-pic {
 	display: inline;
 	margin-top: -100px;
@@ -30,21 +29,18 @@ h2 {
     border-radius: 50%;
 }
 
+/* text formatting */
 .center {
 	display: flex;
 	justify-content: center;
 }
 
-.left-align {
-	text-align: left;
-	margin-left: 15px;
-}
-
-.ci {
+/* hover effect */
+.email-h {
 	color: black;
 }
 
-.ci:hover {
+.email-h:hover {
 	color: blue;
 }
 
