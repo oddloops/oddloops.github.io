@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 /* Create text box */
 p { 
-	width: 500px;
+	width: 515px;
 	margin: auto;
 }
 
@@ -21,7 +21,7 @@ p {
 }
 
 .img-crop {
-	margin: 0 auto;
+	margin: 0 auto;	
 	width: 300px;
     height: 300px;
     position: relative;
