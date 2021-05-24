@@ -1,13 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-/* Create text box */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Noto-Sans-JP|Lato');
+/*  */
 p { 
 	width: 515px;
 	margin: auto;
 }
 
+#Blog {
+	display: none;
+}
+/* Blog formatting */
+#EntryDate {
+	padding-top: 10px;
+	width: 515px;
+	margin: auto;
+	font-style: italic;
+}
+
+#Entry {
+	width: 515px;
+	margin: auto;
+}
+
+#Contacts {
+	float: right;
+	margin:auto
+}
 /* fonts */
 .roboto-font {
-	font-family: Roboto, Helvetica;
+	font-family: 'Noto Sans JP', 'Roboto';
 	font-size: 16px;
 	text-align: left;
 }
@@ -35,22 +55,43 @@ p {
 	justify-content: center;
 }
 
+.nav {
+	border: 1px solid #007bb6;
+	border-width: 1px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 10px;
+}
 /* hover effect */
-.email-h {
+/* .email-h {
 	color: black;
 }
 
 .email-h:hover {
 	color: blue;
-}
+} */
 
 /* fontawesome colors */
 .fa-github {
-	color: #000;
+	color: ##007bb6;
 }
 
 .fa-linkedin {
-    color: #007bb6
+    color: #007bb6;
+}
+
+.fa-envelope {
+	color: #007bb6;
 }
 /*
 .fa-twitter {
