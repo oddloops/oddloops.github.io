@@ -21,9 +21,9 @@ p {
 	margin: auto;
 }
 
-#Contacts {
-	float: right;
-	margin:auto
+#Socials {
+	display: flex;
+	justify-content: center;
 }
 /* fonts */
 .roboto-font {
