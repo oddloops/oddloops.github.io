@@ -4,3 +4,15 @@ p {
     word-wrap: break-word;
     margin-bottom: 10px;
 }
+
+a.spacing {
+    padding-left: 15px;
+}
+
+.fab {
+    color:#FFA630;
+}
+
+.fa {
+    color:#FFA630;
+}
