@@ -12,6 +12,9 @@ p {
     width:800px; 
     word-wrap: break-word;
     margin-bottom: 10px;
+}
+
+p.disappear {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
