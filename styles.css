@@ -14,12 +14,24 @@ p {
     margin-bottom: 10px;
 }
 
+a {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+a.show {
+  opacity: 1;
+}
+
 a.spacing {
     padding-left: 15px;
 }
 
 .bleu-de-france {
     color: #1789FC;
+}
+.orange-peel {
+    color: #FFA630;
 }
 
 .fab {
@@ -28,4 +40,27 @@ a.spacing {
 
 .fa {
     color:#FFA630;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 1px solid #2A2B2A; 
+  white-space: nowrap; 
+  margin: left auto;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #2A2B2A; }
 }
