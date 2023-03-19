@@ -1,5 +1,18 @@
+body {
+    background-color: #CEE0DC;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
 p {
     font-size: 20px;
+    color: #41337A;
     width:800px; 
     word-wrap: break-word;
     margin-bottom: 10px;
@@ -7,6 +20,10 @@ p {
 
 a.spacing {
     padding-left: 15px;
+}
+
+.bleu-de-france {
+    color: #1789FC;
 }
 
 .fab {
