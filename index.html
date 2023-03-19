@@ -55,7 +55,7 @@
       }).then(() => {
         return typing(document.getElementById("content2"), p2Content, 5);
       }).then(() => {
-        return revealElement('a');
+        return revealLinks();
       }).catch((error) => {
         console.error(error);
       });
