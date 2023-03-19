@@ -16,8 +16,16 @@
       <div>
         <h1 id="intro" class="orange-peel"></h1>
         <h2 id="name" class="pt-4 pb-4 orange-peel"></h2>
-        <p id="content1"></p>
-        <p id="content2"></p>
+        <p id="content1">
+          Welcome to my personal page. I'm a recent graduate of the University at Buffalo with a Bachelor of Science 
+          in Computer Science and a Software Developer. I'm experienced with agile methodology, software development, 
+          and test-driven developement and currently looking for opportunites.
+        </p>
+        <p id="content2">
+          In my free time I enjoy learning and improving myself. I engage in physical activity at fitness centers frequently. 
+          Recently, I've started to combine my interests by developing a fitness web application. I enjoying the adventure 
+          and am excited for what's to come. :)
+        </p>
       </div>
       <div id="social-links" class="pt-5">
         <a href="https://www.linkedin.com/in/vinci-wu" target="_blank"><i class="fab fa-linkedin fa-3x" alt="Linkedin"></i></a>
@@ -32,12 +40,6 @@
       // Typing effect for h1, h2, and p
       let h1Content = "Hi there.";
       let h2Content = "Vinci Wu here.";
-      let p1Content = "Welcome to my personal page. I'm a recent graduate of the University at Buffalo with a Bachelor of Science in Computer Science\
-      and a Software Developer. I'm experienced with agile methodology, software development, and test-driven developement and currently\
-      looking for opportunites.";
-      let p2Content = "In my free time I enjoy learning and improving myself. I engage in physical activity at fitness centers frequently.\
-      Recently, I've started to combine my interests by developing a fitness web application. I enjoying the adventure and am\
-      excited for what's to come. :)";
 
       function typing(element, content, speed) {
         return new Promise((resolve, reject) => {
@@ -51,11 +53,9 @@
       typing(document.getElementById("intro"), h1Content, 75).then(() => {
         return typing(document.getElementById("name"), h2Content, 75);
       }).then(() => {
-        return typing(document.getElementById("content1"), p1Content, 5);
+        return revealElement('p');
       }).then(() => {
-        return typing(document.getElementById("content2"), p2Content, 5);
-      }).then(() => {
-        return revealLinks();
+        return revealElement('a');
       }).catch((error) => {
         console.error(error);
       });
