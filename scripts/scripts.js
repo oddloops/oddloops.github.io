@@ -10,9 +10,9 @@ function typeContent(element, content, typeSpeed) {
     }, typeSpeed)
 }
 
-function revealElement(query) {
+function revealLinks() {
     // Get all the links
-    const links = document.querySelectorAll(query);
+    const links = document.querySelectorAll('a');
 
     // Loop through the links and add the 'show' class after a short delay
     links.forEach((link, index) => {
