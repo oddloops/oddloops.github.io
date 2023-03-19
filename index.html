@@ -16,18 +16,20 @@
       <div>
         <h1 id="intro" class="orange-peel"></h1>
         <h2 id="name" class="pt-4 pb-4 orange-peel"></h2>
-        <p id="content1">
-          Welcome to my personal page. I'm a recent graduate of the University at Buffalo with a Bachelor of Science 
-          in Computer Science and a Software Developer. I'm experienced with agile methodology, software development, 
-          and test-driven developement and currently looking for opportunites.
-        </p>
-        <p id="content2">
-          In my free time I enjoy learning and improving myself. I engage in physical activity at fitness centers frequently. 
-          Recently, I've started to combine my interests by developing a fitness web application. I enjoying the adventure 
-          and am excited for what's to come. :)
-        </p>
+        <div id="pContent" class="disappear">
+          <p id="content1">
+            Welcome to my personal page. I'm a recent graduate of the University at Buffalo with a Bachelor of Science 
+            in Computer Science and a Software Developer. I'm experienced with agile methodology, software development, 
+            and test-driven developement and currently looking for opportunites.
+          </p>
+          <p id="content2">
+            In my free time I enjoy learning and improving myself. I engage in physical activity at fitness centers frequently. 
+            Recently, I've started to combine my interests by developing a fitness web application. I enjoying the adventure 
+            and am excited for what's to come. :)
+          </p>
+        </div>
       </div>
-      <div id="social-links" class="pt-5">
+      <div id="social-links" class="pt-5 disappear">
         <a href="https://www.linkedin.com/in/vinci-wu" target="_blank"><i class="fab fa-linkedin fa-3x" alt="Linkedin"></i></a>
         <a href="https://github.com/oddloops" target="_blank" class="spacing"><i class="fab fa-github-square fa-3x" alt="GitHub"></i></a>
         <a href="mailto:vinciwu.vwu@gmail.com" class="spacing"><i class="fa fa-envelope-square fa-3x" alt="Email"></i></a>
@@ -61,9 +63,9 @@
       typing(document.getElementById("intro"), h1Content, 75).then(() => {
         return typing(document.getElementById("name"), h2Content, 75);
       }).then(() => {
-        return revealElement('p');
+        return revealElement('#pContent');
       }).then(() => {
-        return revealElement('a');
+        return revealElement('#social-links');
       }).catch((error) => {
         console.error(error);
       });

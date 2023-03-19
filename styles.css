@@ -12,21 +12,6 @@ p {
     width:800px; 
     word-wrap: break-word;
     margin-bottom: 10px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-p.show {
-    opacity: 1;
-}
-
-a {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-a.show {
-  opacity: 1;
 }
 
 a.spacing {
@@ -46,6 +31,15 @@ a.spacing {
 
 .fa {
     color:#FFA630;
+}
+
+.disappear {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
 }
 
 .typewriter {
