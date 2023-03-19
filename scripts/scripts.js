@@ -10,14 +10,14 @@ function typeContent(element, content, typeSpeed) {
     }, typeSpeed)
 }
 
-function showLinks() {
+function revealElement(query) {
     // Get all the links
-    const links = document.querySelectorAll('a');
+    const links = document.querySelectorAll(query);
 
     // Loop through the links and add the 'show' class after a short delay
     links.forEach((link, index) => {
     setTimeout(() => {
         link.classList.add('show');
-    }, index * 200); // delay each link by 200ms
+        }, index * 200); // delay each link by 200ms
     });
 }

@@ -39,22 +39,26 @@
       Recently, I've started to combine my interests by developing a fitness web application. I enjoying the adventure and am\
       excited for what's to come. :)";
 
-      // begin typing
-      typeContent(document.getElementById("intro"), h1Content, 75);
-      setTimeout(() => {
-         typeContent(document.getElementById("name"), h2Content, 75);
-      }, 1000);
-      setTimeout(() => {
-        typeContent(document.getElementById("content1"), p1Content, 5);
-      }, 2400);
-      setTimeout(() => {
-        typeContent(document.getElementById("content2"), p2Content, 5);
-      }, 5000);
+      function typing(element, content, speed) {
+        return new Promise((resolve, reject) => {
+          typeContent(element, content, speed);
+          setTimeout(() => {
+            resolve();
+          }, 1500);
+        });
+      }
 
-      // links will fade 
-      setTimeout(() => {
-        showLinks();
-      }, 8800);
+      typing(document.getElementById("intro"), h1Content, 75).then(() => {
+        return typing(document.getElementById("name"), h2Content, 75);
+      }).then(() => {
+        return typing(document.getElementById("content1"), p1Content, 5);
+      }).then(() => {
+        return typing(document.getElementById("content2"), p2Content, 5);
+      }).then(() => {
+        return revealElement('a');
+      }).catch((error) => {
+        console.error(error);
+      });
     </script>
   </body>
 </html>
