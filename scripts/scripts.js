@@ -11,13 +11,13 @@ function typeContent(element, content, typeSpeed) {
 }
 
 function revealElement(query) {
-    // Get all the links
-    const links = document.querySelectorAll(query);
+    // Get all the tags in a div
+    const allTags = document.querySelectorAll(query);
 
-    // Loop through the links and add the 'show' class after a short delay
-    links.forEach((link, index) => {
+    // Loop through each tag and add the 'show' class after a short delay
+    allTags.forEach((tag, index) => {
     setTimeout(() => {
-        link.classList.add('show');
-        }, index * 200); // delay each link by 200ms
+        tag.classList.add('show');
+        }, index * 200); // delay by 200ms
     });
 }
