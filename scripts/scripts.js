@@ -10,14 +10,14 @@ function typeContent(element, content, typeSpeed) {
     }, typeSpeed)
 }
 
-function revealElement(query) {
+function revealElement() {
     // Get all the tags in a div or section
-    const allTags = document.querySelectorAll(query);
+    const allTags = document.querySelectorAll('.fade-out');
 
     // Loop through each tag and add the 'show' class after a short delay
     allTags.forEach((tag, index) => {
-    setTimeout(() => {
-        tag.classList.add('fade-in');
+        setTimeout(() => {
+            tag.classList.add('fade-in');
         }, index * 200); // delay by 200ms
     });
 }
