@@ -14,6 +14,23 @@ p {
     margin-bottom: 10px;
 }
 
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.col-md-8 {
+  padding-right: 30px;
+}
+
+.col-md-4 {
+  padding-left: 30px;
+}
+
 .bleu-de-france {
     color: #1789FC;
 }
@@ -27,15 +44,6 @@ p {
 
 .fa {
     color:#FFA630;
-}
-
-.fade-out {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.fade-in {
-    opacity: 1;
 }
 
 .typewriter {
