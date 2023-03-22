@@ -1,3 +1,4 @@
+/* Tag styling */
 h1 {
     font-size: 80px;
 }
@@ -14,6 +15,7 @@ p {
     margin-bottom: 10px;
 }
 
+/* Fade out and in effect */
 .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -22,7 +24,8 @@ p {
 .fade-in {
     opacity: 1;
 }
-
+ 
+/* Colors */
 .bleu-de-france {
     color: #1789FC;
 }
@@ -30,6 +33,7 @@ p {
     color: #FFA630;
 }
 
+/* Font Awesome color */
 .fab {
     color:#FFA630;
 }
@@ -38,6 +42,7 @@ p {
     color:#FFA630;
 }
 
+/* Typewriting effect animation*/
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 1px solid #2A2B2A; 
