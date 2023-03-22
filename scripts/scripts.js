@@ -10,7 +10,7 @@ function typeContent(element, content, typeSpeed) {
     }, typeSpeed)
 }
 
-function revealElement() {
+function revealElement(delay) {
     // Get all the tags in a div or section
     const allTags = document.querySelectorAll('.fade-out');
 
@@ -18,6 +18,6 @@ function revealElement() {
     allTags.forEach((tag, index) => {
         setTimeout(() => {
             tag.classList.add('fade-in');
-        }, index * 200); // delay by 200ms
+        }, index * delay); // delay by 200ms
     });
 }
