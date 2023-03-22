@@ -22,11 +22,11 @@
       </d>
 
       <footer class="fixed-bottom">
-        <section id="social-links" class="container d-flex justify-content-center-left fade-out">
+        <section id="social-links" class="container d-flex justify-content-center-left">
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/vinci-wu" target="_blank"><i class="fab fa-linkedin fa-3x" alt="Linkedin"></i></a></li>
-            <li class="list-inline-item"><a href="https://github.com/oddloops" target="_blank"><i class="fab fa-github-square fa-3x" alt="GitHub"></i></a></li>
-            <li class="list-inline-item"><a href="mailto:vinciwu.vwu@gmail.com"><i class="fa fa-envelope-square fa-3x" alt="Email"></i></a></li>
+            <li class="list-inline-item fade-out"><a href="https://www.linkedin.com/in/vinci-wu" target="_blank"><i class="fab fa-linkedin fa-3x" alt="Linkedin"></i></a></li>
+            <li class="list-inline-item fade-out"><a href="https://github.com/oddloops" target="_blank"><i class="fab fa-github-square fa-3x" alt="GitHub"></i></a></li>
+            <li class="list-inline-item fade-out"><a href="mailto:vinciwu.vwu@gmail.com"><i class="fa fa-envelope-square fa-3x" alt="Email"></i></a></li>
           </ul>
         </section>
       </footer>
@@ -51,9 +51,7 @@
       typing(document.getElementById("intro"), h1Content, 75).then(() => {
         return typing(document.getElementById("name"), h2Content, 75);
       }).then(() => {
-        return revealElement('#pages');
-      }).then(() => {
-        return revealElement('#social-links');
+        return revealElement();
       }).catch((error) => {
         console.error(error);
       });
