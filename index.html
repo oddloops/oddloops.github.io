@@ -51,7 +51,7 @@
       typing(document.getElementById("intro"), h1Content, 75).then(() => {
         return typing(document.getElementById("name"), h2Content, 75);
       }).then(() => {
-        return revealElement();
+        return revealElement(200);
       }).catch((error) => {
         console.error(error);
       });
