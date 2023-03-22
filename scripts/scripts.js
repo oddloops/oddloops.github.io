@@ -11,13 +11,13 @@ function typeContent(element, content, typeSpeed) {
 }
 
 function revealElement(query) {
-    // Get all the tags in a div
+    // Get all the tags in a div or section
     const allTags = document.querySelectorAll(query);
 
     // Loop through each tag and add the 'show' class after a short delay
     allTags.forEach((tag, index) => {
     setTimeout(() => {
-        tag.classList.add('show');
+        tag.classList.add('fade-in');
         }, index * 200); // delay by 200ms
     });
 }

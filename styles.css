@@ -14,10 +14,6 @@ p {
     margin-bottom: 10px;
 }
 
-a.spacing {
-    padding-left: 15px;
-}
-
 .bleu-de-france {
     color: #1789FC;
 }
@@ -33,12 +29,12 @@ a.spacing {
     color:#FFA630;
 }
 
-.disappear {
+.fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.show {
+.fade-in {
     opacity: 1;
 }
 
