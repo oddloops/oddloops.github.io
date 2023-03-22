@@ -16,26 +16,26 @@
       <div>
         <h1 id="intro" class="orange-peel"></h1>
         <h2 id="name" class="pt-4 pb-4 orange-peel"></h2>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav id="pages" class="navbar navbar-expand-lg navbar-light fade-out">
           <a class="navbar-brand orange-peel" href="/about-me.html">About me.</a>
         </nav>
-      </div>
+      </d>
 
       <footer class="fixed-bottom">
-        <div id="social-links" class="container d-flex justify-content-center-left disappear">
+        <section id="social-links" class="container d-flex justify-content-center-left fade-out">
           <ul class="list-inline">
             <li class="list-inline-item"><a href="https://www.linkedin.com/in/vinci-wu" target="_blank"><i class="fab fa-linkedin fa-3x" alt="Linkedin"></i></a></li>
             <li class="list-inline-item"><a href="https://github.com/oddloops" target="_blank"><i class="fab fa-github-square fa-3x" alt="GitHub"></i></a></li>
             <li class="list-inline-item"><a href="mailto:vinciwu.vwu@gmail.com"><i class="fa fa-envelope-square fa-3x" alt="Email"></i></a></li>
           </ul>
-        </div>
+        </section>
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="scripts/scripts.js"></script>
     <!-- Calling scripts -->
     <script>
-      // Typing effect for h1, h2, and p
+      // Typing effect for h1, h2
       let h1Content = "Hi there.";
       let h2Content = "Vinci Wu here.";
 
@@ -50,6 +50,8 @@
 
       typing(document.getElementById("intro"), h1Content, 75).then(() => {
         return typing(document.getElementById("name"), h2Content, 75);
+      }).then(() => {
+        return revealElement('#pages');
       }).then(() => {
         return revealElement('#social-links');
       }).catch((error) => {
