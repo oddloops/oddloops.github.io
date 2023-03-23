@@ -15,6 +15,12 @@ p {
     margin-bottom: 10px;
 }
 
+a.link-effect:hover {
+    color: #FFA630;
+    text-decoration: none;
+    filter: brightness(90%);
+}
+
 /* Fade out and in effect */
 .fade-out {
     opacity: 0;
