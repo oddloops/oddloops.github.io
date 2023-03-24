@@ -24,6 +24,11 @@ a.link-effect:hover {
     filter: brightness(90%);
 }
 
+img.resize-gif {
+    width: 600px;
+    height: 400px;
+}
+
 /* Fade out and in effect */
 .fade-out {
     opacity: 0;
