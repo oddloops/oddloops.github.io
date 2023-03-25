@@ -33,3 +33,11 @@ function revealElement(delay) {
         }, index * delay); // delay by 200ms
     });
 }
+
+// Remove all fade-out class from elements
+function removeFadeOut() {
+    const fadeElements = document.querySelectorAll('.fade-out');
+    fadeElements.forEach(element => {
+        element.classList.remove('fade-out');
+    });
+}
