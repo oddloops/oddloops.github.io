@@ -46,13 +46,27 @@
       let h1Content = "Hi there.";
       let h2Content = "Vinci Wu here.";
 
-      typing(document.getElementById("intro"), h1Content, 75).then(() => {
-        return typing(document.getElementById("name"), h2Content, 75);
-      }).then(() => {
-        return revealElement(200);
-      }).catch((error) => {
-        console.error(error);
-      });
+      let loadPage = () => {
+        typing(document.getElementById("intro"), h1Content, 75).then(() => {
+          return typing(document.getElementById("name"), h2Content, 75);
+        }).then(() => {
+          return revealElement(200);
+        }).catch((error) => {
+          console.error(error);
+        });
+        sessionStorage.setItem('hasLoadedHome', true);
+      };
+
+      window.onload = function() {
+        const loaded = sessionStorage.getItem('hasLoadedHome');
+        if (loaded) {
+          document.getElementById("intro").textContent = h1Content;
+          document.getElementById("name").textContent = h2Content;
+          removeFadeOut();
+        } else {
+          loadPage();
+        }
+      }
     </script>
   </body>
 </html>
