@@ -1,3 +1,4 @@
+// Creates a typing animation
 function typeContent(element, content, typeSpeed) {
     let length = 0;
     let contentLength = content.length;
@@ -10,6 +11,17 @@ function typeContent(element, content, typeSpeed) {
     }, typeSpeed)
 }
 
+// helper function for typeContent
+function typing(element, content, speed) {
+        return new Promise((resolve, reject) => {
+            typeContent(element, content, speed);
+            setTimeout(() => {
+            resolve();
+        }, 1500);
+    });
+}
+
+// creates the fade in effect
 function revealElement(delay) {
     // Get all the tags in a div or section
     const allTags = document.querySelectorAll('.fade-out');

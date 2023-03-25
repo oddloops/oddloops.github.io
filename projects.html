@@ -41,15 +41,6 @@
       // Typing effect for h1 and p
       let h1Content = "Projects.";
 
-      function typing(element, content, speed) {
-        return new Promise((resolve, reject) => {
-          typeContent(element, content, speed);
-          setTimeout(() => {
-            resolve();
-          }, 1500);
-        });
-      }
-
       typing(document.getElementById("projects"), h1Content, 75).then(() => {
         return revealElement(1000);
       }).catch((error) => {

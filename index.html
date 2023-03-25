@@ -46,15 +46,6 @@
       let h1Content = "Hi there.";
       let h2Content = "Vinci Wu here.";
 
-      function typing(element, content, speed) {
-        return new Promise((resolve, reject) => {
-          typeContent(element, content, speed);
-          setTimeout(() => {
-            resolve();
-          }, 1500);
-        });
-      }
-
       typing(document.getElementById("intro"), h1Content, 75).then(() => {
         return typing(document.getElementById("name"), h2Content, 75);
       }).then(() => {
