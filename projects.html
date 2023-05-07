@@ -25,6 +25,11 @@
                     This web application is hosted using <a href="https://sisyphuscycle.herokuapp.com/" target="_blank">Heroku</a> and JawsDB (May encounter
                     an error as resource allocation may be turned off for the web application). 
                   </dd>
+                  <dt class="fade-out">Word A Day (<a href="https://github.com/oddloops/WordADay" target="_blank">https://github.com/oddloops/WordADay</a>)</dt>
+                  <dd class="fade-out">
+                    Word A Day is a simple mobile Android application that generates a random word from a predefined list. It displays a word, its pronunciation, 
+                    and definition. The application is built entirely in Java and was developed for mobile Android application development practice. 
+                  </dd>
                 <dl/>
             </div>
         </div>
@@ -47,7 +52,7 @@
 
       let loadPage = () => {
         typing(document.getElementById("projects"), h1Content, 75).then(() => {
-          return revealElement(100);
+          return revealElement(500);
         }).catch((error) => {
           console.error(error);
         });
