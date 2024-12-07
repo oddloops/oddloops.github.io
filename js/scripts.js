@@ -1,43 +1,43 @@
 // Creates a typing animation
 function typeContent(element, content, typeSpeed) {
-    let length = 0;
-    let contentLength = content.length;
-    let timer = setInterval(function() {
-        element.innerHTML += content.charAt(length);
-        length++;
-        if (length == contentLength) {
-            clearInterval(timer);
-        }
-    }, typeSpeed)
+  let length = 0;
+  const contentLength = content.length;
+  let timer = setInterval(function () {
+    element.innerHTML += content.charAt(length);
+    ++length;
+    if (length == contentLength) {
+      clearInterval(timer);
+    }
+  }, typeSpeed);
 }
 
 // helper function for typeContent
 function typing(element, content, speed) {
-        return new Promise((resolve, reject) => {
-            typeContent(element, content, speed);
-            setTimeout(() => {
-            resolve();
-        }, 1500);
-    });
+  return new Promise((resolve, reject) => {
+    typeContent(element, content, speed);
+    setTimeout(() => {
+      resolve();
+    }, 1500);
+  });
 }
 
 // creates the fade in effect
 function revealElement(delay) {
-    // Get all the tags in a div or section
-    const allTags = document.querySelectorAll('.fade-out');
+  // Get all the tags in a div or section
+  const allTags = document.querySelectorAll('.fade-out');
 
-    // Loop through each tag and add the 'show' class after a short delay
-    allTags.forEach((tag, index) => {
-        setTimeout(() => {
-            tag.classList.add('fade-in');
-        }, index * delay); // delay by 200ms
-    });
+  // Loop through each tag and add the 'show' class after a short delay
+  allTags.forEach((tag, index) => {
+    setTimeout(() => {
+      tag.classList.add('fade-in');
+    }, index * delay); // delay by 200ms
+  });
 }
 
 // Remove all fade-out class from elements
 function removeFadeOut() {
-    const fadeElements = document.querySelectorAll('.fade-out');
-    fadeElements.forEach(element => {
-        element.classList.remove('fade-out');
-    });
+  const fadeElements = document.querySelectorAll('.fade-out');
+  fadeElements.forEach(element => {
+    element.classList.remove('fade-out');
+  });
 }
