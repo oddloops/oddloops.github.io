@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* Tag styling */
 h1 {
     font-size: 80px;
@@ -31,6 +37,10 @@ a.link-effect:hover {
 img.resize-gif {
     width: 600px;
     height: 400px;
+}
+
+ul.no-bullets {
+    list-style-type: none;
 }
 
 /* Fade out and in effect */
