@@ -87,7 +87,7 @@
   <!-- Calling scripts -->
   <script>
     // Typing effect for h1 and p
-    let h1Content = "About me.";
+    const h1Content = "About me.";
     let loadPage = () => {
       typing(document.getElementById("about-me"), h1Content, 75).then(() => {
         return revealElement(500);

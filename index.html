@@ -36,12 +36,12 @@
       <h2 id="name" class="pt-4 pb-4 orange-peel"></h2>
 
       <div id="pagesList" class="fade-out">
-        <ul>
+        <ul class="no-bullets">
           <li>
-            <a class="orange-peel fade-out" href="about-me.html">About me.</a>
+            <a class="orange-peel fade-out twentyfive-size" href="about-me.html">About me.</a>
           </li>
           <li>
-            <a class="orange-peel fade-out" href="projects.html">Projects.</a>
+            <a class="orange-peel fade-out twentyfive-size" href="projects.html">Projects.</a>
           </li>
         </ul>
       </div>
@@ -49,7 +49,7 @@
 
     <footer class="fixed-bottom">
       <section id="social-links" class="container d-flex justify-content-center-start">
-        <ul class="list-inline no-bullets">
+        <ul class="list-inline">
           <li class="list-inline-item fade-out"><a href="https://www.linkedin.com/in/vinci-wu" target="_blank"><i
                 class="fab fa-linkedin fa-3x" alt="Linkedin"></i></a></li>
           <li class="list-inline-item fade-out"><a href="https://github.com/oddloops" target="_blank"><i
@@ -68,8 +68,8 @@
   <!-- Calling scripts -->
   <script>
     // Typing effect for h1, h2
-    let h1Content = "Hi there.";
-    let h2Content = "Vinci Wu here.";
+    const h1Content = "Hi there.";
+    const h2Content = "Vinci Wu here.";
 
     let loadPage = () => {
       typing(document.getElementById("intro"), h1Content, 75).then(() => {

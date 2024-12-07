@@ -24,7 +24,7 @@ dd {
     padding-left: 10px;
 }
 
-a.font-size {
+a.twentyfive-size {
     font-size: 25px;
 }
 
@@ -45,7 +45,7 @@ ul.no-bullets {
     padding: 0;
 }
 
-ul a {
+a {
   text-decoration: none;
 }
 
